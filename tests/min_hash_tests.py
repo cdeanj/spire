@@ -14,7 +14,8 @@ import cProfile
 from pstats import Stats
 
 from long_read_aligner.kmer import Read
-from long_read_aligner.min_hash import MinHash, GreedyPairSketchDirector, SingleSketchDirector, ExhaustivePairSketchDirector
+from long_read_aligner.min_hash import MinHash
+from long_read_aligner.sketch_directors import GreedyPairSketchDirector, SingleSketchDirector, ExhaustivePairSketchDirector
 from long_read_aligner.kmer import KmerSingle, Window
 from long_read_aligner.utils.string_utils import CreateWindow, CreateKMERPairs, PerturbWindow
 

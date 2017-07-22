@@ -91,9 +91,11 @@ def CreateKMERPairsThreshold ( kmers, t ):
 
 
 
-w1 = CreateWindow( 500 )
+w1 = CreateWindow( 1000 )
 kmers1 = CreateKMERPairs ( w1, 5 )
-w2 = CreateWindow( 500 )
+import pdb
+pdb.set_trace()
+w2 = CreateWindow( 1000 )
 kmers2 = CreateKMERPairs ( w2, 5 )
 kmers1t = CreateKMERPairsThreshold ( kmers1, 5 )
 kmers2t = CreateKMERPairsThreshold ( kmers2, 5 )

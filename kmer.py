@@ -130,10 +130,10 @@ def getBuckets(n_buckets, len_seq):
 		if bucket_count < items_per_bucket:
 			
 			buckets[i] = running_bucket[current_bucket]
-			bucket_count +=1
+			bucket_count += 1
 		
 		else:
-			current_bucket +=1
+			current_bucket += 1
 			bucket_count = 0
 			buckets[i] = running_bucket[current_bucket]
 	
